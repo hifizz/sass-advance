@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*
+  不带参数的mixin，预设值
+*/
+/*
+  带参数的mixin，每次调用必须给值
+*/
+/*
+  带参数的mixin，已经有默认值
+*/
+/*
+  设置border背景图
+*/
+/*
+  常用的设置文本样式：
+  font-size
+  color
+  line-height
+
+  lint-height 有时候不需要，不传就行了，没有默认值
+*/

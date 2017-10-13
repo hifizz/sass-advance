@@ -1,0 +1,22 @@
+$basePath: '../images/icon';
+
+@function getPngPath($imageName) {
+  @return $basePath + $imageName + '.png';
+}
+
+@function getPngPathUrl($imageName) {
+  @return url(getPngPath($imageName));
+}
+
+/*
+  实际使用
+*/
+$button-bg: url(getPngPath('confirm')) 0 0 no-reapeat;
+
+.demo {
+  background: url($button-bg) no-repeat;
+}
+
+.demo1 {
+  background: getPngPathUrl('confirm') no-repeat;
+}

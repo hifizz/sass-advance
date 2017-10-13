@@ -1,0 +1,55 @@
+/*
+  不带参数的mixin，预设值
+*/
+@mixin circle-border-radius {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+/*
+  带参数的mixin，每次调用必须给值
+*/
+@mixin border-radius($x, $y) {
+  border-radius: $x, $y;
+  -webkit-border-radius: $x, $y;
+}
+/*
+  带参数的mixin，已经有默认值
+*/
+@mixin border-radius-common ($x: '50%', $y: '50%') {
+  border-radius: $x, $y;
+}
+
+//-----------------------------------
+//----------实际场景用到的-------------
+//-----------------------------------
+
+/*
+  设置border背景图
+*/
+@mixin border-bg($w) {
+  $url: './images/border-bg.png';
+  border-#{$w}-style: solid;
+  border-#{$w}-width: 1px;
+  border-image: url($url) 1 100 repeat;
+}
+
+/*
+  常用的设置文本样式：
+  font-size
+  color
+  line-height
+
+  lint-height 有时候不需要，不传就行了，没有默认值
+*/
+@mixin textStyle ($fontSize, $color, $lineHeight:false) {
+  @if $lineHeight {
+    font-size: #{$fontSize};
+    color: #{$color};
+    line-height: #{$lineHeight};
+  }
+
+  @else {
+    font-size: #{$fontSize};
+    color: #{$color};
+  }
+}

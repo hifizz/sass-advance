@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*
+  实际使用
+*/
+.demo {
+  background: url(url("../images/iconconfirm.png") 0 0 no-reapeat) no-repeat;
+}
+
+.demo1 {
+  background: url("../images/iconconfirm.png") no-repeat;
+}
