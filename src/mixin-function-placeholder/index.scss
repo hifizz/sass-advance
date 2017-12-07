@@ -18,8 +18,38 @@
   color: #fff;
 }
 
+.foo {
+  @extend %demo;
+}
+
 .bar {
   @extend %demo;
+}
+
+
+// -------------
+
+%btn-base {
+  line-height: 24px;
+  width: 200px;
+  height: 90px;
+  border-radius: 90px/2;
+  padding: 0;
+  border: none;
+}
+
+.btn-default {
+  @extend %btn-base;
+  font-size: 24px;
+  color: #fff;
+  background-image: url('../asset/image/btn-bg.png');
+}
+
+.btn-primary {
+  @extend %btn-base;
+  font-size: 22px;
+  color: #ddd;
+  background-image: url('../asset/image/btn-primary-bg.png');
 }
 
 

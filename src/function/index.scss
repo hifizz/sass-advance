@@ -11,14 +11,12 @@ $basePath: '../images/icon';
 /*
   实际使用
 */
-$button-bg: url(getPngPath('confirm')) 0 0 no-reapeat;
-
 .demo {
-  background: url($button-bg) no-repeat;
+  background: url(getPngPath('confirm')) 0 0 no-reapeat;
 }
 
 .demo1 {
-  background: getPngPathUrl('confirm') no-repeat;
+  background: getPngPathUrl('confirm');
 }
 
 // TODO：

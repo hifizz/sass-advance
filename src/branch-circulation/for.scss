@@ -1,0 +1,11 @@
+// ---------- 包含最后一个值 ---------
+
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+// ---------- 不包含最后一个值 -------
+
+@for $i from 1 to 3 {
+  .item-#{$i}-two { width: 2em * $i; }
+}
